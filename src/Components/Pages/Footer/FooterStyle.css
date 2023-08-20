@@ -1,0 +1,114 @@
+.footercont {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    width: 100%;
+
+    height: 65px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 637px;
+    left: 60px;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+
+}
+
+.footercont .icons {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.arrow {
+    display: flex;
+    align-items: end;
+
+}
+
+.footercont .icons .icon {
+    display: flex;
+    width: 170px;
+    height: 50px;
+    padding: 25px;
+    justify-content: space-between;
+    border-radius: 7px;
+    border: 1px solid #FFF;
+    background: #000;
+    align-items: center;
+}
+
+
+
+.footercont .para {
+    width: 363px;
+    color: #B6B6B6;
+    font-family: Mulish;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    /* z-index: 1; */
+
+}
+
+.footercont .mediaicons {
+    display: inline-flex;
+    align-items: center;
+    gap: 70px;
+    /* z-index: -2; */
+
+}
+
+.footercont .arrow img {
+    width: 18px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.footercont .icons .icon p {
+    color: #FFF;
+    text-align: center;
+    font-family: Agrandir;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px;
+    /* 150% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.footercont .mediaicons .socialmedia {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+@media (max-width : 800px) {
+    .footercont {
+        display: flex;
+        width: 280px;
+        padding: 50px 0px;
+        flex-direction: column;
+        margin: 0px auto;
+        align-items: flex-start;
+    }
+    .footercont .icons {
+        flex-direction: column;
+       margin: 0px auto;
+       margin-bottom: 4rem;
+    }
+    .footercont .mediaicons {
+        flex-direction: column;
+        width: 280px;
+    }
+    .footercont .mediaicons .socialmedia {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+}
